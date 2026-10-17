@@ -1,4 +1,4 @@
-FormaLab 
+FormaLab z
 
 OPENING SECTION
 The v40 FormaLab wordmark, colors, size, fade-in and line animation stay on the first screen; the exit fade is removed. No extra opening text or buttons. Scroll down for the original Overview. Navigation is hidden at the top of Overview, then appears as a floating bar after scrolling. Other pages keep navigation visible. The opening adjusts to phones, tablets and desktops and respects reduced motion.
