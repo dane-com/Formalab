@@ -1,0 +1,4 @@
+3DBenchy by Daniel Noree / Creative Tools. CC0 1.0 Universal.
+Source: https://github.com/CreativeTools/3DBenchy/blob/master/Single-part/3DBenchy.stl
+License: https://www.3dbenchy.com/license/
+Original model bundled without geometry modifications.
