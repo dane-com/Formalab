@@ -291,3 +291,13 @@ body:not(.home-opening){padding-top:calc(var(--header-height,74px) + 40px)}
 @media(max-width:600px){body>header{top:10px;left:12px;right:12px;padding:10px 12px}.print-detail-grid{grid-template-columns:1fr;gap:24px}}
 @media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}.brand-opening{opacity:1}}
 @media print{body:not(.home-opening){padding-top:0}body>header{display:none}.scroll-reveal{opacity:1;transform:none}}
+
+/* Replaying the same subtle entrance when returning to the brand opening. */
+.brand-opening.is-replaying .opening-mark{animation:replay-rise .9s cubic-bezier(.2,.7,.2,1) both}
+.brand-opening.is-replaying .opening-line{animation:replay-line .9s ease .2s both}
+@keyframes replay-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes replay-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.page-scroll-reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.page-scroll-reveal.is-visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.brand-opening.is-replaying .opening-mark,.brand-opening.is-replaying .opening-line{animation:none}.page-scroll-reveal{opacity:1;transform:none;transition:none}}
+@media print{.page-scroll-reveal{opacity:1;transform:none}}
