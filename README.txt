@@ -1,4 +1,4 @@
-FormaLab — version 50
+FormaLab — version 51
 
 OPENING SECTION
 The v40 FormaLab wordmark, colors, size, fade-in and line animation stay on the first screen; the exit fade is removed. No extra opening text or buttons. Scroll down for the original Overview. Navigation is hidden at the top of Overview, then appears as a floating bar after scrolling. Other pages keep navigation visible. The opening adjusts to phones, tablets and desktops and respects reduced motion.
@@ -10,7 +10,7 @@ WEBSITE
 Three pages: Overview with a three-step guide and Reviews; Services & print with upload, pricing and Request form; About & Contact. Upload limit: 250 MB per STL or 3MF file; parsing large models depends on device memory. Services keeps materials, upload and calculator together. The 3D bundle loads only on Services. Quote and form state persist between pages in this browser session.
 
 DEPLOY
-Open this formalab folder in your terminal and run: vercel --prod
+Vercel clean URLs are enabled. Pages open at /, /services, and /about without .html. Existing .html links redirect to their clean URL. Commit and push changes to redeploy through GitHub, or run: vercel --prod
 No Python service or Bambu Studio installation is needed for the website.
 No Supabase/database changes are required. Reviews still need approval.
 
